@@ -2,7 +2,8 @@ import discord
 import asyncio
 from datetime import datetime, timedelta
 
-client = discord.Client()
+intents = discord.Intents.default()
+client = discord.Client(intents=intents)
 
 @client.event
 async def on_ready():
@@ -35,4 +36,4 @@ async def start_timer():
 
     print('Timer terminé!')
 
-client.run('YOUR_DISCORD_BOT_TOKEN')
+client.run('MTQ1NzA4ODAwODc4NzQ2MDE2OQ.GSQ1_p.GgzCZFSo2-z68jxWEvK6JgMweye_5RPVIZy89I')
