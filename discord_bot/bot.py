@@ -4,6 +4,7 @@ from datetime import datetime, timedelta
 
 intents = discord.Intents.default()
 client = discord.Client(intents=intents)
+token = 'MTQ1NzA4ODAwODc4NzQ2MDE2OQ.GBpzs-.EdA8hyZWB_o6qFI-LqM5633kOHzDQmQ2XFDhf0'
 
 @client.event
 async def on_ready():
@@ -36,4 +37,4 @@ async def start_timer():
 
     print('Timer terminé!')
 
-client.run('MTQ1NzA4ODAwODc4NzQ2MDE2OQ.GSQ1_p.GgzCZFSo2-z68jxWEvK6JgMweye_5RPVIZy89I')
+client.run(token)
