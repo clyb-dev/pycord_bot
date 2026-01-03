@@ -1,10 +1,15 @@
 import discord
 import asyncio
 from datetime import datetime, timedelta
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+token = os.getenv
 
 intents = discord.Intents.default()
 client = discord.Client(intents=intents)
-token = 'MTQ1NzA4ODAwODc4NzQ2MDE2OQ.GBpzs-.EdA8hyZWB_o6qFI-LqM5633kOHzDQmQ2XFDhf0'
+token = 'token_value_here'  # Remplacez par votre token réel('DISCORD_BOT_TOKEN')
 
 @client.event
 async def on_ready():
